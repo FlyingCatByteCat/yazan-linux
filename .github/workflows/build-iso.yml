@@ -17,9 +17,12 @@ jobs:
           docker run --rm --privileged \
             -v "$PWD":/build:z \
             archlinux/archlinux:latest \
-            bash -c "pacman -Sy --noconfirm archiso python newt parted \
-                     btrfs-progs xfsprogs dosfstools gptfdisk efivar \
-                     libisoburn squashfs-tools syslinux rsync git \
+            bash -c "pacman-key --init && \
+                     pacman-key --populate archlinux && \
+                     pacman -Syu --noconfirm && \
+                     pacman -S --noconfirm --needed archiso python newt parted \
+                       btrfs-progs xfsprogs dosfstools gptfdisk efivar \
+                       libisoburn squashfs-tools syslinux rsync git \
                      && bash /build/build.sh --isolated"
 
       - name: Upload ISO
