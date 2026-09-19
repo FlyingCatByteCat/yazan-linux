@@ -20,7 +20,7 @@ jobs:
             bash -c "pacman-key --init && \
                      pacman-key --populate archlinux && \
                      pacman -Syu --noconfirm && \
-                     pacman -S --noconfirm --needed archiso python newt parted \
+                     pacman -S --noconfirm --needed archiso python libnewt parted \
                        btrfs-progs xfsprogs dosfstools gptfdisk efivar \
                        libisoburn squashfs-tools syslinux rsync git \
                      && bash /build/build.sh --isolated"

@@ -4,7 +4,7 @@ base
 linux
 linux-firmware
 python
-newt
+libnewt
 parted
 e2fsprogs
 dosfstools
