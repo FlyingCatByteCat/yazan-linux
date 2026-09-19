@@ -1,0 +1,30 @@
+name: Build Yazan Linux ISO
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest        # x86_64 runner (required for mkarchiso)
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build ISO in an Arch Linux container
+        run: |
+          docker run --rm --privileged \
+            -v "$PWD":/build:z \
+            archlinux/archlinux:latest \
+            bash -c "pacman -Sy --noconfirm archiso python newt parted \
+                     btrfs-progs xfsprogs dosfstools gptfdisk efivar \
+                     libisoburn squashfs-tools syslinux rsync git \
+                     && bash /build/build.sh --isolated"
+
+      - name: Upload ISO
+        uses: actions/upload-artifact@v4
+        with:
+          name: yazan-linux-1.0.0-x86_64
+          path: out/*.iso
+          if-no-files-found: error

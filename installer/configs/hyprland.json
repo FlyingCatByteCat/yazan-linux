@@ -1,0 +1,19 @@
+{
+  "id": "hyprland",
+  "name": "Hyprland",
+  "description": "Wayland tiling WM",
+  "packages": [
+    "hyprland",
+    "hyprpaper",
+    "hyprlock",
+    "hypridle",
+    "waybar",
+    "wofi",
+    "kitty",
+    "swaybg",
+    "xdg-desktop-portal-hyprland",
+    "qt5-wayland",
+    "qt6-wayland"
+  ],
+  "services": ["xdg-desktop-portal-hyprland"]
+}

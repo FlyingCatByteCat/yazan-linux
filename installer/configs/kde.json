@@ -1,0 +1,21 @@
+{
+  "id": "kde",
+  "name": "KDE Plasma",
+  "description": "Full featured Qt desktop",
+  "packages": [
+    "plasma",
+    "plasma-wayland-session",
+    "konsole",
+    "dolphin",
+    "kate",
+    "ark",
+    "gwenview",
+    "plasma-nm",
+    "plasma-pa",
+    "powerdevil",
+    "qt5-wayland",
+    "qt6-wayland",
+    "sddm"
+  ],
+  "services": ["sddm"]
+}

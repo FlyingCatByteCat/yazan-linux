@@ -1,0 +1,18 @@
+{
+  "id": "sway",
+  "name": "Sway",
+  "description": "Wayland i3 clone",
+  "packages": [
+    "sway",
+    "swaybg",
+    "swaylock",
+    "swayidle",
+    "waybar",
+    "wofi",
+    "foot",
+    "grim",
+    "slurp",
+    "xdg-desktop-portal-wlr"
+  ],
+  "services": ["xdg-desktop-portal-wlr"]
+}

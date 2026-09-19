@@ -1,0 +1,10 @@
+# build outputs
+out/
+work/
+
+# python
+__pycache__/
+*.pyc
+
+# os noise
+.DS_Store

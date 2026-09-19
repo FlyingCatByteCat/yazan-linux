@@ -1,0 +1,13 @@
+{
+  "id": "gnome",
+  "name": "GNOME",
+  "description": "Clean GTK desktop",
+  "packages": [
+    "gnome",
+    "gnome-tweaks",
+    "gnome-terminal",
+    "nautilus",
+    "gdm"
+  ],
+  "services": ["gdm"]
+}

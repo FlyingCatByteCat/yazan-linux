@@ -1,0 +1,19 @@
+[Unit]
+Description=Yazan Linux Guided Installer
+Documentation=https://yazanlinux.org
+After=systemd-user-sessions.service
+Conflicts=getty@tty1.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /etc/yazan/installer/main.py
+StandardInput=tty
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+StandardOutput=tty
+StandardError=tty
+Environment=TERM=xterm-256color
+
+[Install]
+WantedBy=multi-user.target

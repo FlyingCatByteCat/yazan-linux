@@ -1,0 +1,27 @@
+# Yazan Linux live environment packages.
+# Boot media only -- the installer pulls install-time packages itself.
+base
+linux
+linux-firmware
+python
+newt
+parted
+e2fsprogs
+dosfstools
+btrfs-progs
+xfsprogs
+gptfdisk
+ntfs-3g
+efivar
+git
+sudo
+vim
+openssh
+rsync
+arch-install-scripts
+efibootmgr
+grub
+os-prober
+refind
+patch
+sed

@@ -1,0 +1,7 @@
+{
+  "id": "none",
+  "name": "None",
+  "description": "Pure TTY, base system only",
+  "packages": [],
+  "services": []
+}

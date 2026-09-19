@@ -1,0 +1,14 @@
+{
+  "id": "xfce",
+  "name": "XFCE",
+  "description": "Lightweight GTK desktop",
+  "packages": [
+    "xfce4",
+    "xfce4-goodies",
+    "xfce4-terminal",
+    "xfce4-power-manager",
+    "lightdm",
+    "lightdm-gtk-greeter"
+  ],
+  "services": ["lightdm"]
+}

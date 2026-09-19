@@ -1,0 +1,15 @@
+{
+  "id": "openbox",
+  "name": "Openbox",
+  "description": "Minimal floating WM",
+  "packages": [
+    "openbox",
+    "obconf",
+    "tint2",
+    "feh",
+    "picom",
+    "xfce4-terminal",
+    "xorg-xinit"
+  ],
+  "services": []
+}
